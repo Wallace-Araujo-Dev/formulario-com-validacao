@@ -1,0 +1,52 @@
+@media (max-width:810px){
+    main {
+        max-width: 800px;
+        height: 100vh;
+        background-size: contain;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .informacoes h2, p {
+        text-align: center;
+        padding: 10px 130px;
+    }
+
+    .formulario {
+        background-color: var(--primary-color);
+        padding: 20px;
+        width: 90%;
+        height: 380px;
+        margin: 0;
+    }
+
+    .formulario p {
+        margin: 0;
+    }
+
+    .formulario p.campo-o {
+        padding: 0;
+    }
+}
+
+@media (max-width:700px){
+    .informacoes {
+        text-align: center;
+        width: 320px;
+        padding: 0;
+    }
+
+    .informacoes h2, p {
+        padding: 10px;
+    }
+}
+
+@media (max-width:450px){
+    main {
+        padding: 5%;
+    }
+
+    .formulario p {
+        font-size: 1.2rem;
+    }
+}
