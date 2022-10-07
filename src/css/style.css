@@ -1,0 +1,151 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 800px;
+    height: 400px;
+    background-image: url(../images/bg-repeat.jpg);
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.informacoes {
+    color: var(--primary-color);
+}
+
+.informacoes h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.informacoes p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.formulario {
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-left: 60px;
+    width: 840px;
+    height: 380px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario form input,
+.formulario form textarea {
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+.formulario form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.formulario .campo.preenchido {
+    border-color: var(--secondary-color);
+}
+
+.formulario .campo.vazio {
+    border-color: var(--tertiary-color);
+}
+
+.formulario p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.formulario p.campo-o {
+    font-size: .8rem;
+    color: var(--tertiary-color);
+    margin-bottom: 7px;
+    opacity: 0;
+}
+
+.formulario p.campo-o.obrigatorio {
+    opacity: 1;
+}
+
+.formulario p:nth-child(8) {
+    margin: 0;
+}
+
+.formulario .button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0;
+}
+
+@media (max-width:810px){
+    main {
+        max-width: 800px;
+        height: 100vh;
+        background-size: contain;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .informacoes h2, p {
+        text-align: center;
+        padding: 10px 130px;
+    }
+
+    .formulario {
+        background-color: var(--primary-color);
+        padding: 20px;
+        width: 90%;
+        height: 380px;
+        margin: 0;
+    }
+
+    .formulario p {
+        margin: 0;
+    }
+
+    .formulario p.campo-o {
+        padding: 0;
+    }
+}
+
+@media (max-width:700px){
+    .informacoes {
+        text-align: center;
+        width: 320px;
+        padding: 0;
+    }
+
+    .informacoes h2, p {
+        padding: 10px;
+    }
+}
+
+@media (max-width:450px){
+    main {
+        padding: 5%;
+    }
+
+    .formulario p {
+        font-size: 1.2rem;
+    }
+}
