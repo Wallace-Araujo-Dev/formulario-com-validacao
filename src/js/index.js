@@ -41,8 +41,4 @@ submitButton.addEventListener("click", function (e){
     }else{
         bordaCampoVazio[3].classList.add("preenchido");
     }
-
-    if(nameValue && emailValue && telefoneValue && bigtext !== ''){
-        alert("O formulário é válido e pode ser enviado!");
-    }
 })
