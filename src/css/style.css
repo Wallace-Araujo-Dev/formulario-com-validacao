@@ -8,12 +8,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
 }
 
 main {
     width: 800px;
     height: 400px;
-    background-image: url(../images/bg-repeat.jpg);
     display: flex;
     align-items: center;
     padding: 50px;
@@ -79,7 +80,7 @@ main {
     opacity: 0;
 }
 
-.formulario p.campo-o.obrigatorio {
+.formulario p.campo-o.mostrar {
     opacity: 1;
 }
 
@@ -95,4 +96,10 @@ main {
     font-weight: 700;
     cursor: pointer;
     margin: 0;
+    transition: .3s;
+}
+
+.formulario .button:hover {
+    transform: scale(1.02);
+    letter-spacing: 2px;
 }
