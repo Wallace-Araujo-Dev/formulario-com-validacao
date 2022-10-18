@@ -58,6 +58,7 @@ main {
 .formulario form textarea {
     height: 100px;
     resize: none;
+    border: 2px solid;
 }
 
 .formulario .campo.preenchido {
